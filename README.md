@@ -30,7 +30,7 @@ There is one more part to this lab, so make sure to keep up.
 	| `poisonous`| `String`| Required<br>`enum` to include<br>'true' & 'false'| n/a | 
 	| `altitude`| `Number`| n/a | n/a | 
 
-  Remember this schema should be defined in the same file as the Planet schema.  Define the Plant schema above the Planet schema and reference it as    a property of planets, just as we referenced reviews in movies.  
+  Remember this schema should be defined in the same file as the planetSchema.  Define the plantSchema above the planetSchema and reference it as    a property of planets, just as we referenced reviews within movies.  
 
 2. Add the following property to the `Planet` Model:
 
