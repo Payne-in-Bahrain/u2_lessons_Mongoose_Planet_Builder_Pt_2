@@ -4,11 +4,23 @@
 
 ## Intro
 
-In the "Intro to Mongoose" lesson, you created and read documents using a `Movie` Model. In this lab, you'll do the same, but with a `Plant` Model.
+Today in the _Mongoose - Embedding Related Data_ lesson you:
 
-Continue working in the directory you created for Planet Builder Part 1. When you finish Part 2, make sure to push your code to GitHub. There is one more part to this lab, so stay updated.
+- Created a schema used to embed _review_ subdocuments in a _movie_ document.
 
-**Note:** Each part of `mongoose-planet-builder` (parts 1 thru 3) will be a deliverable, and you will make a pull request each time to this same repo to submit each part.
+- Created routes and a controller for the _reviews_ data resource.
+
+- Created UI for creating and displaying the _reviews_ on the **show** view of a movie.
+
+- Wrote a `create` action that retrieved a _movie_ document, pushed the _review_ (`req.body`) into the document's `reviews` array, saved the _movie_ doc, and redirected back to the show view for that movie.
+
+Similar to what we did in the lesson, in this lab you'll be adding functionality to the `mongoose-planet-builder` project you created in the _part 1_ lab.
+
+## Goal
+
+The goal of this lab is to add the ability to specify a list (array) of `plants` for the  planet.
+
+Styling is secondary, spend time on it only after the functionality has been implemented.
 
 ## Exercises
 
