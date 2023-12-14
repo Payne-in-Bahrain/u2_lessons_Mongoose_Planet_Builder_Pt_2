@@ -45,9 +45,9 @@ Styling is secondary, spend time on it only after the functionality has been imp
 
 3. Implement the following User Stories:
 
-   - AAU, when viewing the list of planets, I want to click on a "detail" link displayed next to each planet to view all of the properties for that planet (`show` view).
-
-   - AAU, when I click on a planet's detail page, I want to view a list of all plants associated with that planet, displaying each plant's name, color, whether or not the plant is poisonous, and the altitude at which it is grown (alternatively display the properties you provided to your planet schema). _You do not need a separate route or controller for this_.
+   - AAU, when viewing the list of planets, I want to click on the name of planet to view all of the properties for that planet (`show` view).  Refator the planet's index page to display on the names of the planets.  You can wrap the planet's name in `<a>` tags that refernce the url for the planet detail.
+     
+   - AAU, when I'm on a planet's detail page, I want to view a list of all plants associated with that planet, displaying each plant's name, color, whether or not the plant is poisonous, and the altitude at which it is grown (alternatively display the properties you provided to your planet schema). _You do not need a separate route or controller for this_.
 
    - AAU, I want to create plants by entering information into a form on a planet's detail page. Although this only requires a create functionality, please create a separate router and controller for plants, as we did for reviews in the earlier lesson.
 
