@@ -47,13 +47,13 @@ Styling is secondary, spend time on it only after the functionality has been imp
 
    - AAU, while viewing the list of planets, I want to be able to click on a planet's name to view all of its properties in the `show` view. To achieve this, update the planet's index page to display only the names of the planets. Wrap each planet's name in `<a>` tags that reference the URL for the planet detail
      
-   - AAU, when I'm on a planet's detail page, I want to view a list of all plants associated with that planet, displaying each plant's name, color, whether or not the plant is poisonous, and the altitude at which it is grown (alternatively display the properties you provided to your planet schema). _You do not need a separate route or controller for this_.
+   - AAU, when I'm on a planet's detail page, I want to view a list of all plants associated with that planet, displaying each plant's name, color, whether or not the plant is poisonous, and the altitude at which it is grown (alternatively display the properties you provided to your plantSchema). _You do not need a separate route or controller for this_.
 
    - AAU, I want to create plants by entering information into a form on a planet's detail page. Although this only requires a create functionality, please create a separate router and controller for plants, as we did for reviews in the earlier lesson.
 
 ## Bonuses
 
-1. Sort the list of `plants` for a planet alphabetically when passing them to the view. You will need to do this in the planets controller where the planets are found and passed to the planets index view. You can access a planet's plants property in your controller using _dot_ notation.
+1. Sort the list of `plants` for a planet alphabetically when passing them to the view. You will need to do this in the planets controller where the planets are queried and passed to the planets index view. You can access a planet's plants property in your controller using _dot_ notation.
 2. Be creative and have fun with styling your app!
 
 ### This is a deliverable (Part 3, the final part, will build upon this)
