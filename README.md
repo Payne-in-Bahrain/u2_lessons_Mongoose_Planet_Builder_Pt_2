@@ -33,7 +33,7 @@ Styling is secondary, spend time on it only after the functionality has been imp
    | `name`     | `String`| Required                                    | n/a           |
    | `color`    | `String`| Required                                    | n/a           |
    | `poisonous`| `String`| Required<br>`enum` to include<br>'true' & 'false'| n/a       |
-   | `altitude` | `Number`| n/a                                         | n/a           |
+
 
    Remember this schema should be defined in the same file as the `planetSchema`. Define the `plantSchema` above the `planetSchema`, so that it can be properly referenced. 
 
