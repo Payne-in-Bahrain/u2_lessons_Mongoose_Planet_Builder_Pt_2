@@ -49,7 +49,7 @@ Styling is secondary, spend time on it only after the functionality has been imp
      
    - AAU, I want to create plants by entering information into a form on a planet's detail page. Although this only requires a create functionality, please create a separate router and controller for plants, as we did for reviews in the earlier lesson.
      
-   - AAU, when I'm on a planet's detail page, I want to view a list of all plants associated with that planet, displaying each plant's name, color, whether or not the plant is poisonous, and the altitude at which it is grown (alternatively display the properties you provided to your plantSchema). _You do not need a separate route or controller for this_.
+   - AAU, when I'm on a planet's detail page, I want to view a list of all plants associated with that planet, displaying each plant's name, color, and whether or not the plant is poisonous(alternatively display the properties you provided to your plantSchema). _You do not need a separate route or controller for this_.
 
 
 ## Bonuses
