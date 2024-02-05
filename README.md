@@ -41,7 +41,7 @@ Styling is secondary, spend time on it only after the functionality has been imp
 
    | Property | Type               | Validations | Default Value |
    |----------|--------------------|-------------|---------------|
-   | `planets`| `[plantsSchema]`   | n/a         | n/a           |
+   | `plants`| `[plantsSchema]`   | n/a         | n/a           |
 
 3. Implement the following User Stories:
 
