@@ -1,0 +1,80 @@
+<%- include('../partials/header') %>
+<%- include('../partials/nav') %>
+<main>
+  <h1><%= title %></h1>
+<section>
+  <div>Name:</div>
+  <div>
+    <%= planet.name %>
+    <a href="/planets/<%= planet._id %>/edit">
+      <button>Edit Planet</button>
+    </a>
+  </div>
+  <div>Climate: </div>
+  <div><%= planet.climate %></div>
+  <div>Population: </div>
+  <div><%= planet.population %></div>
+
+
+  <div>Humans:</div>
+<ul>
+  <% planet.humans.forEach(humansMember => { %>
+    <li><%= humansMember.name %></li>
+  <% }) %>
+</ul>
+</section>
+
+
+<form id="add-exp-to-humans" action="/planet/<%= planet._id %>/explorers" method="POST">
+  <select name="explorerId">
+    <%- explorers.forEach(explorer =>  { %>
+      <option value="<%= explorer._id%>"><%= explorer.name %></option>
+   <% }) %>
+  </select>
+  <button type="submit">Add to Humans</button>
+</form>
+
+
+
+
+
+<br><br><h2>Plants</h2>
+<% if (planet.plants.length) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Color</th>
+        <th>Poisonous</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% planet.plants.forEach(function(plant) { %>
+        <tr>
+          <td><%= plant.name %></td>
+          <td><%= plant.color %></td>
+          <td><%= plant.poisonous %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+<% } else { %>
+  <h5>No Plants Yet</h5>
+<% } %>
+<form id="add-plant-form" 
+  action="/planets/<%= planet._id %>/plants"
+  method="POST"
+  >
+  <label>Name:</label>
+  <textarea name="name"></textarea>
+  <label>Color:</label>
+  <textarea name="color"></textarea>
+  <label>Poisonous:</label>
+  <select name="poisonous">
+    <option value="true">true</option>
+    <option value="false" selected>false</option>
+  </select>
+  <input type="submit" value="Add Plant">
+</form>
+</main>
+<%- include('../partials/footer') %>

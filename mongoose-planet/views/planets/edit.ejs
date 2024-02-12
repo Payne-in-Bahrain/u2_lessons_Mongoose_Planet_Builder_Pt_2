@@ -1,0 +1,24 @@
+<%- include('../partials/header')  %>
+<link rel='stylesheet' href='/stylesheets/planets/new.css' />
+<%- include('../partials/nav')  %>
+<h2>Create a New Planet</h2>
+<form action="/planets/<%= planet._id %>?_method=PUT" method="POST">
+  <label>name:
+    <input  type="text" value="<%= planet.name  %>" name="name">
+  </label><br>
+  <label>climate
+    <select name="climate">
+      <option value="<%= planet.climate %>"><%= planet.climate %></option>
+      <option value="Oceanic">Oceanic</option>
+      <option value="Tropical">Tropical</option>
+      <option value="Arctic">Arctic</option>
+      <option value="Desert">Desert</option>
+      <option value="Rainforest">Rainforest</option>
+    </select>
+  </label><br>
+  <label>population
+    <input type="Number" value="<%= planet.population  %>" name="population" min="0">
+  </label><br>
+  <button type="submit">Create Planet</button>
+</form>
+<%- include('../partials/footer')  %>
