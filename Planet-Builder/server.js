@@ -6,6 +6,8 @@ var logger = require('morgan')
 
 var indexRouter = require('./routes/index')
 var planetsRouter = require('./routes/planets/planet')
+require('dotenv').config()
+require('./config/database') // database
 
 var app = express()
 
