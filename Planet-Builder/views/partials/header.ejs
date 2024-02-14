@@ -32,6 +32,24 @@
         color: #fff;
         background-color: black;
       }
+
+      div.plantIsPoisonous {
+        border-bottom: 2px solid blue;
+        margin: 0 0 2px 0;
+      }
+
+      div.plantIsPoisonous:last-child {
+        margin: 0;
+      }
+
+      div.formContainer {
+        background-color: blue;
+        padding: 0 0 4px 0;
+      }
+
+      div.formContainer label {
+        color: #fff;
+      }
     </style>
     <title><%=title%></title>
   </head>
@@ -40,6 +58,5 @@
     <nav class="mainNav">
       <a href="/planets/new">ADD PLANET</a><a href="/planets">ALL PLANETS</a>
     </nav>
-    <hr />
   </body>
 </html>

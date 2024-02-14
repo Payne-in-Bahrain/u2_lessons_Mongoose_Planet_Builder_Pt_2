@@ -1,8 +1,24 @@
 const mongoose = require('mongoose')
 const plantSchema = mongoose.Schema({
-  name: { type: String, required: true },
-  color: { type: String, required: true },
-  poisonous: { type: String, enum: [true, false] }
+  name: {
+    type: String,
+    required: true,
+    validate(value) {
+      if (value === undefined) {
+        throw new Error('Please give the plant a name.')
+      }
+    }
+  },
+  color: {
+    type: String,
+    required: true,
+    validate(value) {
+      if (value === undefined) {
+        throw new Error('Please give the plant a color.')
+      }
+    }
+  },
+  poisonous: { type: Boolean, enum: [true, false], required: true }
 })
 
 const planetSchema = mongoose.Schema({
