@@ -23,8 +23,8 @@ const newPlanet = (req, res) => {
 
 const addNewPlanet = async (req, res) => {
   try {
-    console.log('req.body.plants is :', req.body.plants)
-    const reqPlantsValue = req.body.plants
+    // console.log('req.body.plants is :', req.body.plants)
+    // const reqPlantsValue = req.body.plants
     // console.log('Object.create() result is :', Object.create())
     const newPlanetValue = Object.create({})
     const newPlanetValueAfterAddingPlants = Object.create({})
@@ -34,14 +34,14 @@ const addNewPlanet = async (req, res) => {
     // console.log('1-newPlanetValue is :', newPlanetValue)
     newPlanetValue.climate = req.body.climate
     newPlanetValue.population = req.body.population
-    newPlanetValue.plants = req.body.plants
+    // newPlanetValue.plants = req.body.plants
     // console.log('2-newPlanetValue is :', newPlanetValue)
-    newPlanetValue.plants = JSON.parse(reqPlantsValue)
+    // newPlanetValue.plants = JSON.parse(reqPlantsValue)
 
     newPlanetValueAfterAddingPlants.name = newPlanetValue.name
     newPlanetValueAfterAddingPlants.climate = newPlanetValue.climate
     newPlanetValueAfterAddingPlants.population = newPlanetValue.population
-
+    /* 
     const plants = newPlanetValue.plants.map((plantObj) => {
       if (plantObj.isPoison === 'true') {
         return {
@@ -58,8 +58,8 @@ const addNewPlanet = async (req, res) => {
       }
     })
 
-    // console.log('plants arr is :', plants)
-    newPlanetValueAfterAddingPlants.plants = plants
+ */ // console.log('plants arr is :', plants)
+    // newPlanetValueAfterAddingPlants.plants = plants
     // console.log('new planet is :', newPlanetValue)
     const newPlanet = new Planet(newPlanetValueAfterAddingPlants)
     await newPlanet.save()

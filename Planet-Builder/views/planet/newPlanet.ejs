@@ -44,10 +44,10 @@
     <div class="container">
       <label>Population</label
       ><input type="text" name="population" placeholder="Population" />
-      <input type="hidden" name="plants" id="planetPlantsList" />
+      <!-- <input type="hidden" name="plants" id="planetPlantsList" /> -->
     </div>
     <div class="addPlantButtonContainer">
-      <button type="button" onclick="addNewPlantUI()">add plant</button>
+      <!-- <button type="button" onclick="addNewPlantUI()">add plant</button> -->
     </div>
     <div class="plants"></div>
     <div class="formFooter">
@@ -122,10 +122,6 @@
       })
       planetPlantsListHidden.value = JSON.stringify(plantsList)
       console.log(planetPlantsListHidden.value)
-      /*
-      planetPlantsList.value.forEach((obj) => {
-        console.log(obj)
-      }) */
     })
     // plantsDiv.appendChild(plantInfoDiv1)
   }
